@@ -1,0 +1,43 @@
+.landing-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.landing-block img {
+  max-width: 30%;
+  height: auto;
+}
+
+.landing-links {
+  margin-top: 20px;
+}
+
+.landing-links a {
+  display: inline-block;
+  background-color: orange;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.landing-links a:hover {
+  background-color: darkorange;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .landing-block img {
+    max-width: 60%;
+  }
+
+  .landing-links a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

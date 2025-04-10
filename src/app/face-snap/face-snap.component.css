@@ -1,0 +1,70 @@
+.app-face-snap-card {
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+  img {
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+  /* button {
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: lightgray 3px 3px 7px;
+    margin-right: 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    &:active {
+      transform: translate(1px, 1px);
+      box-shadow: lightgray 0 0 5px;
+    }
+  } */
+}
+
+
+.snapped {
+  background-color: #d8fdd8;
+  color: darkgreen;
+  button {
+    color: darkgreen;
+    background-color: rgba(144, 238, 144, 0.2);
+    box-shadow: #8fbc8f 3px 3px 6px;
+    &:active {
+      box-shadow: #8fbc8f 0 0 5px;
+    }
+  }
+}
+
+
+.app-face-snap-card button {
+  background-color: white;
+  padding: 8px 16px;
+  border: 1px solid orange;
+  border-radius: 20px;
+  color: orange;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(255, 165, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: orange;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.4);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

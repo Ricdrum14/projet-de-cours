@@ -1,0 +1,22 @@
+<div class="app-face-snap-card " [ngClass]="{ snapped: userHasLiked }">
+     
+     <a routerLink="/facesnaps" class="back-arrow">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="orange" viewBox="0 0 24 24">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+          <span class="label">Back</span>
+        </a>
+        
+     <h2>{{ faceSnap.title | titlecase }}</h2>
+     @if(faceSnap.location){
+          <p>Location: {{faceSnap.location}}</p>
+     }
+     @else {
+          <p>Location: Non Spécifiée</p>
+     }
+     <img [alt]="faceSnap.title" [src]="faceSnap.imageURL">
+     <p>{{ faceSnap.description }}</p>
+     <p>FaceSnap crée le {{ faceSnap.createdAt | date: 'd MMMM YYYY, à HH:mm ' }}</p>
+     <p> <button (click)="onSnap()">{{snapButtonText}}</button>  <span [ngStyle]="{color: 'rgb(0, '+ faceSnap.snaps +', 0)'}"> ❤️ {{faceSnap.snaps}}</span></p>
+     
+</div>

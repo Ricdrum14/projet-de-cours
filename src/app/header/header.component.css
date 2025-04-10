@@ -1,0 +1,44 @@
+header {
+  position: sticky; /* reste collé en haut lors du scroll */
+  top: 0;
+  z-index: 1000; /* reste au-dessus du contenu */
+  background-color: orange;
+  padding: 15px 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+  }
+
+  nav {
+    margin-top: 8px;
+
+    a {
+      margin: 0 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.3s, transform 0.3s;
+
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+        transform: scale(1.05);
+      }
+
+      &.active {
+        color: #333;
+        background-color: white;
+        padding: 4px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+    }
+  }
+}
